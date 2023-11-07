@@ -1,7 +1,7 @@
 {
-    "name": "jcortes/cc-example-template",
+    "name": "jorgecortesdev/cc-strategy-pattern",
     "type": "project",
-    "description": "Esqueleto de un repositorio para los ejemplos de código de mi canal de youtube.",
+    "description": "Este repositorio contiene el código de ejemplo utilizado en el video del patrón adaptador de mi canal de youtube.",
     "keywords": ["php"],
     "require": {
         "php": "^8.2"

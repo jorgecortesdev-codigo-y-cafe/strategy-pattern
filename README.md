@@ -1,8 +1,8 @@
 <p><a href="https://www.youtube.com/@CodigoyCafe" target="_blank"><img src="https://raw.githubusercontent.com/jorgecortesdev/jorgecortesdev/main/art/banner-codigo-y-cafe.jpg" alt="Código y Café"></a></p>
 
-# cc-example-template
+# cc-strategy-pattern
 
-Esqueleto de un repositorio para los ejemplos de código de mi canal de youtube.
+Este repositorio contiene el código de ejemplo utilizado en el video del patrón adaptador de mi canal de youtube.
 
 ## Apóya mi trabajo
 
@@ -13,8 +13,8 @@ Crear contenido gratuito requiere de mucho esfuerzo y horas de trabajo, sin menc
 ## Uso
 
 ```shell
-git clone https://github.com/jorgecortesdev/cc-example-template.git
-cd cc-example-template
+git clone https://github.com/jorgecortesdev/cc-strategy-pattern.git
+cd cc-strategy-pattern
 composer install
 ```
 ## Pruebas
