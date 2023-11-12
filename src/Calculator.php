@@ -6,6 +6,11 @@ namespace App;
 
 use App\Strategies\AdditionStrategy;
 
+/**
+ * @method int|float addition(int|float $a, int|float $b)
+ * @method int|float subtraction(int|float $a, int|float $b)
+ * @method int|float multiplication(int|float $a, int|float $b)
+ */
 class Calculator
 {
     protected OperationInterface $operation;
@@ -27,15 +32,22 @@ class Calculator
         return $this;
     }
 
-    public function __call($method, $arguments): int|float
+    /**
+     * @param string $method
+     * @param non-empty-array<int|float, int|float> $arguments
+     * @return int|float
+     */
+    public function __call(string $method, array $arguments): int|float
     {
         // Necesitamos agregar el namespace completo de la clase
-        $classname = '\\App\\Strategies\\'. ucfirst($method) . 'Strategy';
+        $classname = '\\App\\Strategies\\' . ucfirst($method) . 'Strategy';
 
         // list($a, $b) = $arguments; [] hace lo mismo que list, pero es más corto.
         [$a, $b] = $arguments;
 
-        $this->setOperation(new $classname);
+        /** @var OperationInterface $instance */
+        $instance = new $classname();
+        $this->setOperation($instance);
 
         return $this->execute($a, $b);
     }

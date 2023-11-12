@@ -2,7 +2,7 @@
 
 # cc-strategy-pattern
 
-Este repositorio contiene el código de ejemplo utilizado en el video del patrón adaptador de mi canal de youtube.
+Este repositorio contiene el código de ejemplo utilizado en el video del patrón estrategia de mi canal de youtube.
 
 ## Apóya mi trabajo
 
@@ -22,6 +22,10 @@ composer install
 ```shell
 composer test
 ```
+## Dependencias
+- [PHPUnit](https://phpunit.de/)
+- [PHPStan](https://phpstan.org/)
+- [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard)
 
 ## Changelog
 
