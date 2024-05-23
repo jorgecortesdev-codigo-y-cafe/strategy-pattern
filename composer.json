@@ -1,8 +1,10 @@
 {
-    "name": "jorgecortesdev/cc-strategy-pattern",
+    "name": "jorgecortesdev-codigo-y-cafe/strategy-pattern",
     "type": "project",
     "description": "Este repositorio contiene el código de ejemplo utilizado en el video del patrón estrategia de mi canal de youtube.",
-    "keywords": ["php"],
+    "keywords": [
+        "php"
+    ],
     "require": {
         "php": "^8.2"
     },
